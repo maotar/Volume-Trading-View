@@ -1,6 +1,7 @@
 # Volume Trading View
 
-[Imgur](https://i.imgur.com/9BneVa8.png)
+![alt text](https://i.imgur.com/9BneVa8.png "GUI")
+
 
 ## Introduction ##
 
