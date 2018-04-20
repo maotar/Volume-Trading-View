@@ -1,5 +1,7 @@
 # Volume Trading View
 
+[Imgur](https://i.imgur.com/9BneVa8.png)
+
 ## Introduction ##
 
 Will create GUI with 2x2 tradingview charts for most traded cryptocurrencies on Binance exchange
