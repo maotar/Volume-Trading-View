@@ -230,6 +230,8 @@ GetVolume:
 
 ; Fullscreen url hotkeys, esc key returns to 2x2
 
+#IfWinActive, VolumeTradingView.ahk
+
 $1::
 Send, 1
 GuiControl, Move, TV1, x0 y0 w%MonRight% h%MonBottom% 
@@ -286,5 +288,6 @@ Guicontrol, Show, TV1
 Guicontrol, Show, TV2
 Guicontrol, Show, TV3
 Guicontrol, Show, TV4
+return
 
-
+#IfWinActive
