@@ -3,6 +3,7 @@
 #SingleInstance
 #Include Jxon.ahk ; Autohotkey JSON library, Credit https://github.com/cocobelgica
 SetTitleMatchMode, 2
+SetKeyDelay, 0
 
 ; Get monitor size
 SysGet, Mon, MonitorWorkArea
@@ -230,52 +231,52 @@ GetVolume:
 ; Fullscreen url hotkeys, esc key returns to 2x2
 
 $1::
-
+Send, 1
 GuiControl, Move, TV1, x0 y0 w%MonRight% h%MonBottom% 
 Guicontrol, Show, TV1
 Guicontrol, Hide, TV2
 Guicontrol, Hide, TV3
 Guicontrol, Hide, TV4
 
-Send, 1
+
 
 return
 
 $2::
-
+Send, 2
 GuiControl, Move, TV2, x0 y0 w%MonRight% h%MonBottom% 
 Guicontrol, Hide, TV1
 Guicontrol, Show, TV2
 Guicontrol, Hide, TV3
 Guicontrol, Hide, TV4
-Send, 2
+
 
 return
 
 $3::
-
+Send, 3
 GuiControl, Move, TV3, x0 y0 w%MonRight% h%MonBottom%
 Guicontrol, Hide, TV1
 Guicontrol, Hide, TV2
 Guicontrol, Show, TV3
 Guicontrol, Hide, TV4
-Send, Send, 3
+
 
 return
 
 $4::
-
+Send, 4
 GuiControl, Move, TV4, x0 y0 w%MonRight% h%MonBottom%
 Guicontrol, Hide, TV1
 Guicontrol, Hide, TV2
 Guicontrol, Hide, TV3
 Guicontrol, Show, TV4
-Send, 4
+
 
 return
 
 $Esc::
-
+Send {Esc}
 GuiControl, Move, TV1, w%BoxWidth% h%BoxHeight%
 GuiControl, Move, TV2, x0 y%BoxY% w%BoxWidth% h%BoxHeight%
 GuiControl, Move, TV3, x%BoxX% y0 w%BoxWidth% h%BoxHeight%
@@ -286,4 +287,4 @@ Guicontrol, Show, TV2
 Guicontrol, Show, TV3
 Guicontrol, Show, TV4
 
-Send {Esc}
+
